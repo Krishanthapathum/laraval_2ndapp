@@ -16,7 +16,7 @@ class adminController extends Controller
     }
 
     public function store(request $req){
-       $stu = new Student();
+       $stu = new Student(); 
 
        $stu->student_name = $req->StudentName;
        $stu->student_email = $req->StudentEmail;
