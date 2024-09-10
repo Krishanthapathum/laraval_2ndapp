@@ -12,7 +12,11 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard'); 
+    return view('dashboard');
+});
+
+Route::get('/students/all', function(){
+    return view('students.index');
 });
 
 // Route::get('/admin', function () {
