@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Student2;
 
 class studentController extends Controller
 {
@@ -14,9 +15,17 @@ class studentController extends Controller
         return view('students.index');
     }
 
-    public function storeStudent(Request $request){
-        return $request;
+    public function storeStudent(request $request){
+        $student =  new Student2();
+
+        $student->first_name = $request->firstName;
+        $student->last_name = $request->lastName;
+        $student->contact_number = $request->contactNumber;
+        $student->address = $request->address;
+        $student->dob = $request->dob;
+        $student->save();
+
+        return ("Success");
+
     }
-
-
 }

@@ -30,7 +30,7 @@
           </div>
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Student Birth day</label>
-            <input type="text" class="form-control" name="bod" aria-describedby="nameHelp" placeholder="Enter Birthday">
+            <input type="text" class="form-control" name="dob" aria-describedby="nameHelp" placeholder="Enter Birthday">
           </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
